@@ -1,0 +1,20 @@
+// KSP Script Example Syntax File
+
+on init 
+	make_perfview 
+	set_ui_height_px(529-71)     
+	set_ui_width_px(850) 
+	set_control_par($INST_ICON_ID,$CONTROL_PAR_HIDE,$HIDE_WHOLE_CONTROL)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+	set_control_par_str($INST_WALLPAPER_ID,$CONTROL_PAR_PICTURE,"Wallpaper")
+	set_script_title("Main")
+	declare $count
+	declare $a
+end on
+
+function Test
+	if ($count<-2435643)
+		$a := -4
+	else
+		$a := 100000*$count
+	end if
+end function

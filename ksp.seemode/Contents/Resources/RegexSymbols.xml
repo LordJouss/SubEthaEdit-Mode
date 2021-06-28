@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "symbol.dtd">
+<symbols>
+
+    <blocks>
+        <beginregex>on</beginregex>
+        <endregex>end on</endregex>
+    </blocks>
+    
+    <symbol id="on" symbol="on_#6D5E85" indentation="0" ignoreblocks="yes">
+        <regex>^[ \t]*on\s([\$A-Za-z0-9()_]*\s(\([\$A-Za-z0-9_]*\))?)</regex>
+        <postprocess>
+            <find>^[ \t]*on</find>
+            <replace> </replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+            <find>[\n\r]</find>
+            <replace> </replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+        </postprocess>
+    </symbol>
+        
+    <symbol id="Functions" symbol="fc_#6AB18D" indentation="0" ignoreblocks="yes">
+        <regex>^[ \t]*function\s([\$A-Za-z0-9_]*)</regex>
+        <postprocess>
+            <find>[\n\r]</find>
+            <replace> </replace>
+            <find>[ \t]+</find>
+            <replace> </replace>
+        </postprocess>
+    </symbol>
+
+    <symbol id="CVS/SVN conflict" font-weight="bold" image="SymbolWarn" indentation="0" ignoreblocks="no">
+        <regex>^&lt;&lt;&lt;&lt;&lt;&lt;&lt;([\n\r]|.)*?======([\n\r]|.)*?&gt;&gt;&gt;&gt;&gt;&gt;&gt;</regex>
+        <postprocess>
+            <find>.*</find>
+            <replace>Versioning conflict!</replace>
+        </postprocess>
+    </symbol>
+
+</symbols>

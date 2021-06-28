@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<template>NewTemplate.txt</template>
+	<recognition>
+		<extension>txt</extension>
+		<regex>\s*on init</regex>
+	</recognition>
+</settings>

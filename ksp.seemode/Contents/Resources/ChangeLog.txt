@@ -1,0 +1,7 @@
+###################################### NB
+Hat tip to ash
+https://www.native-instruments.com/en/products/komplete/samplers/kontakt-6/downloads/
+#####################################
+
+Changes with Version 0.1    
+    *) First Release for Kontakt 6
